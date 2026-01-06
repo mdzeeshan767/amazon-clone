@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Amazon Clone — Front Page</title>
+  <link rel="stylesheet" href="amazonclone1.css">
+</head>
+<body>
+  <!-- TOP BAR -->
+  <header class="topbar">
+    <div class="topbar-inner">
+      <div class="brand">
+        <span class="brand-mark">a</span>
+        <span class="brand-title">amazon-clone</span>
+      </div>
+
+      <form class="search" role="search" aria-label="Site search">
+        <select class="search-cat" aria-label="Category">
+          <option>All</option>
+          <option>Electronics</option>
+          <option>Books</option>
+          <option>Fashion</option>
+        </select>
+        <input class="search-input" type="search" placeholder="Search for products, brands and more" aria-label="Search">
+        <button class="search-btn" type="submit">Search</button>
+      </form>
+
+      <nav class="top-actions" aria-label="User">
+        <a href="#" class="deliver">Deliver to</a>
+        <a href="#" class="signin">Sign in</a>
+        <a href="#" class="orders">Orders</a>
+        <a href="#" class="cart">Cart <span class="cart-count">0</span></a>
+      </nav>
+    </div>
+
+    <nav class="mega-nav" aria-label="Main">
+      <a href="#">All</a>
+      <a href="#">Today's Deals</a>
+      <a href="#">Customer Service</a>
+      <a href="#">Gift Cards</a>
+      <a href="#">Sell</a>
+      <a href="#">Help</a>
+    </nav>
+  </header>
+
+  <!-- MAIN -->
+  <main class="container">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-left">
+        <h1>Big savings. Every day. Big selection.</h1>
+        <p class="lead">Discover deals on millions of products — electronics, books, fashion and more.</p>
+
+        <ul class="categories" aria-hidden>
+          <li>Electronics</li>
+          <li>Computers</li>
+          <li>Home</li>
+          <li>Books</li>
+          <li>Fashion</li>
+          <li>Beauty</li>
+        </ul>
+
+        <h2 class="section-title">Featured picks</h2>
+
+        <div class="grid">
+          <!-- product card (repeat) -->
+          <article class="product">
+            <div class="product-thumb">
+              <svg viewBox="0 0 120 80" aria-hidden><rect width="120" height="80" rx="8" fill="#e6eef8"/><text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle" fill="#7b8ea9">Image</text></svg>
+            </div>
+            <h3 class="prod-title">Wireless Headphones</h3>
+            <p class="prod-meta">Brand • 20h battery</p>
+            <div class="prod-bottom">
+              <span class="price">₹2,499</span>=
+              <span class="rating">★★★★☆</span>
+            </div>
+          </article>
+
+          <article class="product">
+            <div class="product-thumb">
+              <svg viewBox="0 0 120 80" aria-hidden><rect width="120" height="80" rx="8" fill="#fff2e6"/><text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle" fill="#c67a3a">Image</text></svg>
+            </div>
+            <h3 class="prod-title">Mechanical Keyboard</h3>
+            <p class="prod-meta">75% compact • RGB</p>
+            <div class="prod-bottom">
+              <span class="price">₹3,999</span>
+              <span class="rating">★★★★☆</span>
+            </div>
+          </article>
+
+          <article class="product">
+            <div class="product-thumb">
+              <svg viewBox="0 0 120 80" aria-hidden><rect width="120" height="80" rx="8" fill="#eef7ea"/><text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle" fill="#4b8b5a">Image</text></svg>
+            </div>
+            <h3 class="prod-title">Smart Watch</h3>
+            <p class="prod-meta">HR • GPS</p>
+            <div class="prod-bottom">
+              <span class="price">₹6,199</span>
+              <span class="rating">★★★★☆</span>
+            </div>
+          </article>
+
+          <article class="product">
+            <div class="product-thumb">
+              <svg viewBox="0 0 120 80" aria-hidden><rect width="120" height="80" rx="8" fill="#f3e6ff"/><text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle" fill="#7a5ecb">Image</text></svg>
+            </div>
+            <h3 class="prod-title">4K Monitor</h3>
+            <p class="prod-meta">27" UHD</p>
+            <div class="prod-bottom">
+              <span class="price">₹19,999</span>
+              <span class="rating">★★★★☆</span>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <aside class="hero-right" aria-labelledby="deal-heading">
+        <h3 id="deal-heading">Deal of the day</h3>
+        <p class="muted">Save up to 40% on select electronics</p>
+        <div class="deal-card">
+          <svg viewBox="0 0 220 140" aria-hidden><rect width="220" height="140" rx="10" fill="#ffffff"/><text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle" fill="#223" font-size="18">Smartphone — ₹9,999</text></svg>
+        </div>
+        <a class="btn" href="#">Shop the deal</a>
+      </aside>
+    </section>
+
+    <!-- BANNER ROW -->
+    <section class="banners">
+      <div class="banner">
+        <div class="icon">🚚</div>
+        <div><strong>Fast delivery</strong><div class="muted">Shipping across India</div></div>
+      </div>
+      <div class="banner">
+        <div class="icon">🔒</div>
+        <div><strong>Secure payments</strong><div class="muted">Encrypted & trusted</div></div>
+      </div>
+      <div class="banner">
+        <div class="icon">💬</div>
+        <div><strong>24/7 Support</strong><div class="muted">Chat & email support</div></div>
+      </div>
+    </section>
+
+    <!-- MORE PRODUCTS (wide strip) -->
+    <section class="product-strip">
+      <h2 class="section-title">Top picks for you</h2>
+      <div class="strip-grid">
+        <!-- small product tiles -->
+        <div class="tile">
+          <div class="tile-thumb"><svg viewBox="0 0 80 60"><rect width="80" height="60" rx="6" fill="#eef"/></svg></div>
+          <div class="tile-info">
+            <div class="tile-title">Earbuds</div>
+            <div class="tile-price">₹2,199</div>
+          </div>
+        </div>
+
+        <div class="tile">
+          <div class="tile-thumb"><svg viewBox="0 0 80 60"><rect width="80" height="60" rx="6" fill="#fde"/></svg></div>
+          <div class="tile-info">
+            <div class="tile-title">Backpack</div>
+            <div class="tile-price">₹1,999</div>
+          </div>
+        </div>
+
+        <div class="tile">
+          <div class="tile-thumb"><svg viewBox="0 0 80 60"><rect width="80" height="60" rx="6" fill="#efe"/></svg></div>
+          <div class="tile-info">
+            <div class="tile-title">Notebook</div>
+            <div class="tile-price">₹299</div>
+          </div>
+        </div>
+
+        <div class="tile">
+          <div class="tile-thumb"><svg viewBox="0 0 80 60"><rect width="80" height="60" rx="6" fill="#f7f7ff"/></svg></div>
+          <div class="tile-info">
+            <div class="tile-title">Desk Lamp</div>
+            <div class="tile-price">₹1,299</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <div class="col">
+          <h4>Get to Know Us</h4>
+          <a href="#">About</a>
+          <a href="#">Careers</a>
+          <a href="#">Press</a>
+        </div>
+        <div class="col">
+          <h4>Make Money with Us</h4>
+          <a href="#">Sell on Amazon</a>
+          <a href="#">Advertise</a>
+        </div>
+        <div class="col">
+          <h4>Let Us Help You</h4>
+          <a href="#">Your Account</a>
+          <a href="#">Returns Centre</a>
+          <a href="#">Help</a>
+        </div>
+      </div>
+      <div class="copyright">© <span id="year">2025</span> Amazon Clone — For learning only</div>
+    </footer>
+  </main>
+</body>
+</html>
